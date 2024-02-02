@@ -1,0 +1,13 @@
+.item-checkout {
+    display: flex;
+    align-items: flex-start;
+}
+
+.item-button {
+    margin-top: 18px;
+    margin-left: 1em;
+}
+
+.item-text {
+    margin-right: 0px;
+}

@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom"
 
-export default function Clock() {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    const key = setInterval(() => {
-      setCounter(count => count + 1)
-    }, 1000);
-
-    return () => {
-      clearInterval(key);
-    };
-  }, [])
-
+const App = () => {
   return (
-    <p>{counter} seconds have passed.</p>
+    <div>
+      <h1>Hello from the main page of the app!</h1>
+      <p>Here are some examples of links to other pages</p>
+      <nav>
+        <ul>
+          <li>
+            <Link to="profile">Profile page</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
-}
+};
+
+export default App;
